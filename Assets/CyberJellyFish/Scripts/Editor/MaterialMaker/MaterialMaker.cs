@@ -3,7 +3,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace CyberJellyFish.Editor
+namespace CyberJellyFish.Editors
 {
     public static class MaterialMaker
     {
