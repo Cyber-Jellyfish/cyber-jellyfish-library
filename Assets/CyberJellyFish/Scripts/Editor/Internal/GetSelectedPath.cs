@@ -1,19 +1,19 @@
 ﻿#if UNITY_EDITOR
 using System.IO;
 using UnityEditor;
-using UnityEngine;
 
 namespace CyberJellyFish.Editors
 {
-    public class GetSelectedPath : MonoBehaviour
+    public static class GetSelectedPath
     {
         #region METHODS
 
         public static string GetSelectedPathOrFallback()
         {
             string path = AssetDatabase.GetAssetPath(Selection.activeObject);
-            if (string.IsNullOrEmpty(path) || !File.Exists(path)) return "Assets";
-            return Path.GetDirectoryName(path);
+            if (File.Exists(path)) path = Path.GetDirectoryName(path);
+            if (string.IsNullOrEmpty(path) || !Directory.Exists(path)) return "Assets";
+            return path;
         }
 
         #endregion
