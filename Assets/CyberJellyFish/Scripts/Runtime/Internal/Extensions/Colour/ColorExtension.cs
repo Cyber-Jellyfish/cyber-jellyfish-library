@@ -1,6 +1,5 @@
-using CyberJellyFish.Internal;
+using CyberJellyFish.Utility;
 using UnityEngine;
-using Color = UnityEngine.Color;
 
 public static class ColorExtension
 {

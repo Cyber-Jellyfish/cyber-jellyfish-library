@@ -45,7 +45,7 @@ namespace CyberJellyFish.Editors
         [MenuItem("Assets/Create/Materials/From Folder", false, 280)]
         public static void CompileMaterial()
         {
-            string path = GetSelectedPath.GetSelectedFolderPathOrFallback();
+            string path = EditorSelection.GetSelectedFolderPath();
             string materialName = string.Empty;
 
             string[] guids = AssetDatabase.FindAssets("t:texture2D", new[] {path});
