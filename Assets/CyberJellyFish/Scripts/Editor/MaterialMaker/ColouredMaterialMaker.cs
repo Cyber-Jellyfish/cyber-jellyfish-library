@@ -13,7 +13,7 @@ namespace CyberJellyFish.Editors
         [MenuItem("Assets/Create/Materials/Random Coloured Material", false, 280)]
         public static void CompileMaterial()
         {
-            string path = GetSelectedPath.GetSelectedPathOrFallback();
+            string path = GetSelectedPath.GetSelectedFolderPathOrFallback();
 
             Shader shader =
                 GraphicsSettings.renderPipelineAsset

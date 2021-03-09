@@ -16,7 +16,7 @@ namespace CyberJellyFish.Editors
         [MenuItem("Assets/Create/File/Text File", priority = 80)]
         public static void CreateTextFile()
         {
-            string path = GetSelectedPath.GetSelectedPathOrFallback();
+            string path = GetSelectedPath.GetSelectedFolderPathOrFallback();
             path = Path.Combine(path, "text-file.txt");
             ProjectWindowUtil.CreateAssetWithContent(path, "");
             AssetDatabase.Refresh();
@@ -25,7 +25,7 @@ namespace CyberJellyFish.Editors
         [MenuItem("Assets/Create/File/Json File", priority = 80)]
         public static void CreateJsonFile()
         {
-            string path = GetSelectedPath.GetSelectedPathOrFallback();
+            string path = GetSelectedPath.GetSelectedFolderPathOrFallback();
             path = Path.Combine(path, "new-json.json");
             ProjectWindowUtil.CreateAssetWithContent(path, "{\n}");
             AssetDatabase.Refresh();
