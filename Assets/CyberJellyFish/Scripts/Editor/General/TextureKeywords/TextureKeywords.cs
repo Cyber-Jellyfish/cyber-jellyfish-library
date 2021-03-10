@@ -103,13 +103,6 @@ namespace CyberJellyFish.Editors
         [Header("Occlusion Map Keys")]
         public List<string> OcclusionMapKeys = new List<string>()
         {
-            "roughao",
-            "rough_ao",
-            "roughaomap",
-            "roughao_m",
-            "roughao_map",
-            "rough_ao_m",
-            "rough_ao_map",
             "ao",
             "ao_",
             "aom",
