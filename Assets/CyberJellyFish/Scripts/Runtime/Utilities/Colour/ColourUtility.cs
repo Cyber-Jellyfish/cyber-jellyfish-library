@@ -3,6 +3,8 @@
  * LinkedIn : https://www.linkedin.com/in/ubaidullah-effendi-emjedi-202494183/
  */
 
+using System;
+using System.Globalization;
 using UnityEngine;
 
 namespace CyberJellyFish.Utility
@@ -12,7 +14,7 @@ namespace CyberJellyFish.Utility
         #region COLOR UTILITY METHODS
 
         /// <summary>
-        /// A New Color based on the 255 Range of Values.
+        /// Create a New Color based on the 255 Range of Values.
         /// </summary>
         /// <param name="r"></param>
         /// <param name="g"></param>
