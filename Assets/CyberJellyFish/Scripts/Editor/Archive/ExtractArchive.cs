@@ -15,7 +15,7 @@ namespace CyberJellyFish.Editors
 
         #region METHODS
 
-        [MenuItem("Assets/Create/Archive/Extract to Folder", false, 90)]
+        [MenuItem("Assets/Create/Archive/Extract to Folder", false, 89)]
         public static void ExtractArchiveToFolder()
         {
             CleanFilePaths(out string inPath, out string outPath);

@@ -9,6 +9,7 @@ namespace CyberJellyFish.General
     {
         #region HTML STRING METHODS
 
+        public static Color NeonNavy = ColourUtility.Color255(0f, 50f, 20f);
         public static Color Pink100 = ColourUtility.HtmlColor("#FF80AB");
         public static Color Pink = ColourUtility.HtmlColor("#E91E63");
         public static Color DarkPink = ColourUtility.HtmlColor("#C2185B");

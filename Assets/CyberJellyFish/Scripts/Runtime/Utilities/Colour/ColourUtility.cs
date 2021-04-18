@@ -11,6 +11,12 @@ namespace CyberJellyFish.Utility
 {
     public static class ColourUtility
     {
+        #region VARIABLES
+
+        private static Color _color;
+
+        #endregion
+
         #region COLOR UTILITY METHODS
 
         /// <summary>
@@ -33,8 +39,8 @@ namespace CyberJellyFish.Utility
         /// <returns></returns>
         public static Color HtmlColor(string htmlColor)
         {
-            ColorUtility.TryParseHtmlString(htmlColor, out Color color);
-            return color;
+            ColorUtility.TryParseHtmlString(htmlColor, out _color);
+            return _color;
         }
 
         /// <summary>
